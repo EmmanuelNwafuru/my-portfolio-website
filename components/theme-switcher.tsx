@@ -8,7 +8,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Laptop, Moon, Sun } from "lucide-react";
+import { Laptop, LucideToggleRight, Moon, Sun, ToggleLeft } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -30,6 +30,10 @@ const ThemeSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
+        {/* <Button variant={null}>
+          <ToggleLeft />
+          <LucideToggleRight />
+        </Button> */}
         <Button variant="ghost" size={"sm"}>
           {theme === "light" ? (
             <Sun

@@ -32,8 +32,12 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 272 88% 3%;
+    --foreground: 258 68% 96%;
+    --purple-700: 273 76% 10%;
+    --purple-600: 273 60% 24%;
+    --purple-500: 274 56% 39%;
+    --purple-400: 274 68% 56%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
@@ -61,9 +65,9 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border font-diatype;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-light;
   }
 }
